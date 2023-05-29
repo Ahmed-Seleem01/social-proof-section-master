@@ -1,3 +1,11 @@
+/* Setup the fonts */
+@font-face {
+  font-family: "League Spartan";
+  src: url("../assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* Set all elements box sizing */
 *, *::before, *::after{
   box-sizing: border-box;
@@ -5,4 +13,6 @@
 /* Style the body */
 body{
   margin: 0;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
 }
