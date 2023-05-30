@@ -61,17 +61,14 @@ body{
 }
 /* Set the basic elements layout */
 .container , .section-1, .section-2, .section-3{
-  /* border: 1px solid; */
   text-align: center;
 }
 /* Set the main style */
 main.main-container{
-  /* border: 2px solid; */
   display: grid;
   grid-template-columns: 1fr;
   padding: 78px 25px;
   gap: 30px;
-  /* margin-top: 60px; */
 }
 /* Set the first section styles */
 section.section-1 h1{
@@ -122,7 +119,6 @@ section.section-3 {
   gap: 15px
 }
 section.section-3 > div[class*="card"]{
-  /* border: 1px solid; */
   padding: 30px;
   text-align: left;
   border-radius: 10px;
