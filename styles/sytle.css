@@ -184,7 +184,6 @@ footer.attribution a {
     align-items: flex-start;
   }
   .main-container .section-1 h1 {
-    border: 1px solid;
     width: 280px;
     margin-bottom: 10px;
   }
@@ -198,7 +197,6 @@ footer.attribution a {
   .section-2 > ul > li {
     flex-direction: row;
     gap: 30px;
-    border: 2px solid;
     width: 100%;
   }
   .section-2 > ul > li:nth-child(2) {
