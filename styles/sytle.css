@@ -161,7 +161,7 @@ footer.attribution a {
 /* Media queries breakpoints */
 @media (min-width: 700px){
   body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   main.main-container{
     grid-template-columns: repeat(2, 1fr);
@@ -171,15 +171,13 @@ footer.attribution a {
     gap: 0;
   }
   .container::before {
-    top: 0;
     background: url(../images/bg-pattern-top-desktop.svg) no-repeat;
     height: 400px;
   }
   .container::after {
-    display: block;
-    bottom: 0;
-    left: 270px;
+    right: 0;
     background: url(../images/bg-pattern-bottom-desktop.svg) no-repeat;
+    background-position: top right;
     height: 670px;
   }
   .main-container .section-1{
@@ -189,7 +187,8 @@ footer.attribution a {
     align-items: flex-start;
   }
   .main-container .section-1 h1{
-    width: 60%;
+    border: 1px solid;
+    width: 280px;
     margin-bottom: 10px;
   }
   .section-2{
