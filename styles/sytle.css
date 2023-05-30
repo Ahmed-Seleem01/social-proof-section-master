@@ -5,6 +5,11 @@
   font-weight: 500;
   font-style: normal;
 }
+:root{
+  --dark-magenta: hsl(300, 43%, 22%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+}
 
 /* Set all elements box sizing */
 *, *::before, *::after{
@@ -62,7 +67,20 @@ main.main-container{
   border: 2px solid;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 25px;
+  padding: 20px;
+}
+/* Set the first section styles */
+section.section-1 h1{
+  color: var(--dark-magenta, rgb(0, 0, 0));
+  font-size: 2.4rem;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+section.section-1 p{
+  color: var(--dark-grayish-magenta, rgb(0, 0, 0));
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 1.09rem;
 }
 /* Set the rating images */
 .section-2 > ul > li::before{
