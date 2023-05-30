@@ -9,6 +9,8 @@
   --dark-magenta: hsl(300, 43%, 22%);
   --dark-grayish-magenta: hsl(303, 10%, 53%);
   --light-grayish-magenta: hsl(300, 24%, 96%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --white-color: hsl(0, 0%, 100%);
 }
 
 /* Set all elements box sizing */
@@ -110,4 +112,35 @@ section.section-2 > ul{
   background-size: 15px;
   width: 89px;
   height: 15px;
+}
+/* Set the third section styles */
+section.section-3 {
+  gap: 20px
+}
+section.section-3 > div[class*="card"]{
+  border: 1px solid;
+  padding: 30px;
+  text-align: left;
+  border-radius: 10px;
+  color: var(--white-color, rgb(0, 0, 0));
+  background-color: var(--dark-magenta,  hsl(0, 0%, 100%));
+}
+div[class*="card"] > div{
+  justify-content: flex-start;
+  gap: 15px;
+}
+div[class*="card"] > p{
+  margin-top: 20px;
+}
+div[class*="card"] > div > .profile-info *{
+  margin: 0;
+  font-size: 0.9rem;
+}
+.profile-info > p{
+  color: var(--soft-pink, rgb(0, 0, 0));
+}
+div[class*="card"] > div > img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
