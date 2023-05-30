@@ -5,7 +5,7 @@
   font-weight: 500;
   font-style: normal;
 }
-:root{
+:root {
   --dark-magenta: hsl(300, 43%, 22%);
   --dark-grayish-magenta: hsl(303, 10%, 53%);
   --light-grayish-magenta: hsl(300, 24%, 96%);
@@ -14,34 +14,37 @@
 }
 
 /* Set all elements box sizing */
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /* Declare general classes */
-.flex-container-col{
+.flex-container-col {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.flex-container-row{
+.flex-container-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 /* Style the body */
-body{
+body {
   margin: 0;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-size: 15px;
   position: relative;
 }
 /* Style the container */
-.container{
+.container {
   height: 100%;
   padding-bottom: 10px;
 }
 /* Set the background pallettes */
-.container::before, .container::after{
+.container::before,
+.container::after {
   content: "";
   position: absolute;
   left: 0;
@@ -49,35 +52,38 @@ body{
   background-repeat: no-repeat;
   z-index: -1;
 }
-.container::before{
+.container::before {
   top: 0;
   background: url(../images/bg-pattern-top-mobile.svg) no-repeat;
   height: 300px;
 }
-.container::after{
+.container::after {
   bottom: 0;
   background: url(../images/bg-pattern-bottom-mobile.svg) no-repeat;
   height: 400px;
 }
 /* Set the basic elements layout */
-.container , .section-1, .section-2, .section-3{
+.container,
+.section-1,
+.section-2,
+.section-3 {
   text-align: center;
 }
 /* Set the main style */
-main.main-container{
+main.main-container {
   display: grid;
   grid-template-columns: 1fr;
   padding: 78px 25px;
   gap: 30px;
 }
 /* Set the first section styles */
-section.section-1 h1{
+section.section-1 h1 {
   color: var(--dark-magenta, rgb(0, 0, 0));
   font-size: 2.4rem;
   margin-top: 0;
   margin-bottom: -8px;
 }
-section.section-1 p{
+section.section-1 p {
   color: var(--dark-grayish-magenta, rgb(0, 0, 0));
   line-height: 22px;
   font-weight: 400;
@@ -85,28 +91,28 @@ section.section-1 p{
   margin-bottom: 0;
 }
 /* Set the second section styles */
-section.section-2 > ul{
+section.section-2 > ul {
   margin: 0;
   width: 100%;
   list-style: none;
   padding: 0;
 }
-.section-2 > ul > li{
+.section-2 > ul > li {
   background-color: var(--light-grayish-magenta, rgb(0, 0, 0));
   border-radius: 10px;
   padding: 15px;
 }
-.section-2 > ul > li:not(:last-child){
+.section-2 > ul > li:not(:last-child) {
   margin-bottom: 15px;
 }
-.section-2 >ul > li > p{
+.section-2 > ul > li > p {
   color: var(--dark-magenta, rgb(0, 0, 0));
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 0;
 }
 /* Set the rating images */
-.section-2 > ul > li::before{
+.section-2 > ul > li::before {
   content: "";
   background-image: url(../images/icon-star.svg);
   background-repeat: space no-repeat;
@@ -116,30 +122,30 @@ section.section-2 > ul{
 }
 /* Set the third section styles */
 section.section-3 {
-  gap: 15px
+  gap: 15px;
 }
-section.section-3 > div[class*="card"]{
+section.section-3 > div[class*="card"] {
   padding: 30px;
   text-align: left;
   border-radius: 10px;
   color: var(--white-color, rgb(0, 0, 0));
-  background-color: var(--dark-magenta,  hsl(0, 0%, 100%));
+  background-color: var(--dark-magenta, hsl(0, 0%, 100%));
 }
-div[class*="card"] > div{
+div[class*="card"] > div {
   justify-content: flex-start;
   gap: 15px;
 }
-div[class*="card"] > p{
+div[class*="card"] > p {
   margin-top: 20px;
 }
-div[class*="card"] > div > .profile-info *{
+div[class*="card"] > div > .profile-info * {
   margin: 0;
   font-size: 0.9rem;
 }
-.profile-info > p{
+.profile-info > p {
   color: var(--soft-pink, rgb(0, 0, 0));
 }
-div[class*="card"] > div > img{
+div[class*="card"] > div > img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
