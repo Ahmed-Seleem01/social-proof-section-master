@@ -38,3 +38,12 @@ body{
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
 }
+/* Set the rating images */
+.section-2 > ul > li::before{
+  content: "";
+  background-image: url(../images/icon-star.svg);
+  background-repeat: space no-repeat;
+  background-size: 15px;
+  width: 89px;
+  height: 15px;
+}
