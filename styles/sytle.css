@@ -59,6 +59,7 @@ body{
 }
 /* Set the basic elements layout */
 .container , .section-1, .section-2, .section-3{
+  border: 1px solid;
   text-align: center;
 }
 /* Set the main style */
@@ -80,6 +81,26 @@ section.section-1 p{
   line-height: 22px;
   font-weight: 400;
   font-size: 1.09rem;
+}
+/* Set the second section styles */
+section.section-2 > ul{
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+.section-2 > ul > li{
+  background-color: var(--light-grayish-magenta, rgb(0, 0, 0));
+  border-radius: 10px;
+  padding: 15px;
+}
+.section-2 > ul > li:not(:last-child){
+  margin-bottom: 15px;
+}
+.section-2 >ul > li > p{
+  color: var(--dark-magenta, rgb(0, 0, 0));
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 /* Set the rating images */
 .section-2 > ul > li::before{
